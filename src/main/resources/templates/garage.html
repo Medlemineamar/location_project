@@ -39,6 +39,20 @@
             <td th:text="${garage.latitude}">Latitude</td>
             <td th:text="${garage.longitude}">Longitude</td>
             <td th:text="${garage.moughataa}">Moughataa</td>
+            <td>
+                <form th:action="@{/garage/delete/{id}(id=${garage.id})}" method="post">
+                    <input type="hidden" name="_method" value="delete" />
+                    <button class="btn btn-danger" type="submit" >Delete</button>
+                </form>
+            </td>
+            <td>
+                <form th:action="@{/garage/update/{id}(id=${garage.id})}" method="get">
+                    <button class="btn btn-info" type="submit">Edit</button>
+                </form>
+            </td>
+
+
+
 
             <!-- Autres colonnes -->
         </tr>
