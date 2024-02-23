@@ -52,6 +52,7 @@
 		</dependency>
 	</dependencies>
 
+
 	<build>
 		<plugins>
 			<plugin>
@@ -67,6 +68,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+        <finalName>location_project</finalName>
 	</build>
 
 </project>
